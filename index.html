@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Restaurant Name</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Landing Page -->
+    <section id="landing-page">
+      <h1>WELCOME TO GURUKRIPA</h1>
+      <hr/>
+      <nav>
+        <ul>
+          <li><a href=\"#menu-categories">Menu</a></li>
+          <li><a href="#shopping-cart">Cart</a></li>
+          <li><a href="#checkout">Checkout</a></li>
+        </ul>
+      </nav>
+      <div id="hero-image">
+        <img src="./ok.avif" alt="delicious food">
+      </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section id="menu-categories">
+      <h2><a href="./menu.html">MENU</a></h2>
+      <hr/>
+      <nav>
+        <ul>
+          <li><a href="#appetizers">Appetizers</a></li>
+          <li><a href="#entrees">Entrees</a></li>
+          <li><a href="./dessert.html">Desserts</a></li>
+        </ul>
+      </nav>
+      <div id="menu-items">
+        <!-- Display menu items -->
+      </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section id="shopping-cart">
+      <h2>Cart</h2>
+      <div id="cart-items">
+        <!-- Display cart items -->
+      </div>
+      <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <!-- Checkout -->
+    <section id="checkout">
+      <h2>Checkout</h2>
+      <hr/>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required>
+        <label for="address">Table Number</label>
+        <input type="text" id="address" required>
+        <label for="payment">Payment Method</label>
+        <select id="payment" required>
+          <option value="">Select payment method</option>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">Paypal</option>
+        </select>
+        <hr/>
+        <div id="order-summary">
+          <!-- Display order summary -->
+        </div>
+        <button id="confirm-btn">Confirm</button>
+      </form>
+    </section>
+
+    <!-- Confirmation Page -->
+    <section id="confirmation">
+      <h2>Order Confirmation</h2>
+      <p>Thank you for your order!</p>
+      <div id="order-details">
+        <!-- Display order details -->
+      </div>
+      <button id="back-to-menu-btn">Back to Menu</button>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
